@@ -15,3 +15,10 @@ func MocTest(t *testing.T) {
 	assert.Equal(t, val, ret)
 	assert.Nil(t, err)
 }
+func InterfaceTest(t *testing.T) {
+	var loader mhz19.Co2Dataloader
+	mock := mhz19.MockMHZ19{Value: 3}
+	loader = &mock
+	loader.Connect()
+	loader = &mhz19.MHZ19{}
+}
