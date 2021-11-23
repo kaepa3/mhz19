@@ -6,6 +6,11 @@ import (
 	"github.com/tarm/serial"
 )
 
+type Co2Dataloader interface {
+	Connect() error
+	ReadCO2() (int, error)
+}
+
 type MHZ19 struct {
 	port *serial.Port
 }
