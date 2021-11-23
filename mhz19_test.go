@@ -9,7 +9,7 @@ import (
 
 func MocTest(t *testing.T) {
 	val := 2
-	mock := mhz19.MocMHZ19{Value: val}
+	mock := mhz19.MockMHZ19{Value: val}
 	assert.Nil(t, mock.Connect())
 	ret, err := mock.ReadCO2()
 	assert.Equal(t, val, ret)
