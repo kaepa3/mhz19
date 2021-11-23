@@ -3,7 +3,7 @@ package mhz19_test
 import (
 	"testing"
 
-	"github.com/kebhr/mhz19"
+	"github.com/kaepa3/mhz19"
 	"github.com/stretchr/testify/assert"
 )
 
